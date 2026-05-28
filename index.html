@@ -213,6 +213,29 @@ h1 em {
   color: var(--gold);
 }
 
+/* ——— TO TRY MARKER ——— */
+.to-try-star {
+  display: inline-block;
+  color: var(--gold);
+  margin-left: 6px;
+  font-size: 0.7em;
+  vertical-align: super;
+  letter-spacing: 0;
+}
+
+.to-try-pill {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  border: 1px solid var(--line-strong);
+  padding: 3px 9px 2px;
+  text-transform: uppercase;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-family: 'Manrope', sans-serif;
+}
+
 /* ——— MODAL ——— */
 .modal-overlay {
   position: fixed;
@@ -401,7 +424,7 @@ body.no-scroll { overflow: hidden; }
 
   <footer>
     <em>Tocca una scheda per i dettagli</em>
-    Le informazioni sono raccolte da fonti pubbliche e siti ufficiali
+    <span class="to-try-star" style="margin-left: 0; margin-right: 6px;">✦</span>indica i locali ancora da provare
   </footer>
 
 </div>
@@ -563,6 +586,21 @@ const data = [
         price: "€€€€€ (~350€ a persona)",
         when: "Occasioni davvero speciali, cene gastronomiche",
         tags: ["1 Stella Michelin", "Menu Specchio", "Fine dining", "Cortile interno"]
+      },
+      {
+        name: "Cracco in Galleria",
+        subtitle: "1 ⭐ Michelin",
+        zone: "Galleria Vittorio Emanuele",
+        notVisited: true,
+        shortDesc: "Il ristorante di Carlo Cracco nel cuore della Galleria Vittorio Emanuele. Stella Michelin riconquistata a novembre 2025. Resident chef Luca Sacchi.",
+        tagline: "Grandeur culinaria, manageriale e architettonica nel salotto di Milano",
+        cuisine: "Alta cucina italiana contemporanea, tecnica impeccabile",
+        address: "Galleria Vittorio Emanuele II, primo piano (su 5 piani complessivi del progetto)",
+        atmosphere: "Edificio storico su 5 piani inaugurato a febbraio 2018. Al piano terra il Café con bancone in marmo di Levanto in stile anni '20 (anche pasticceria/colazione del pastry chef Marco Pedron). Al piano nobile il ristorante stellato con 45 coperti, tre salette (due privé) e scenografiche vetrate sull'Ottagono della Galleria. Tra i maestri di Cracco: Ducasse in cucina e Pinchiorri in cantina.",
+        specialties: "Sezione dedicata alle uova (tuorlo marinato con asparagi e tartufo nero, uovo alla milanese). Raviolo aperto, vitello alla milanese rivisitato, spaghettone al pomodoro giallo abbrustolito con astice. Cantina con una delle migliori selezioni di vini francesi d'Italia, vini biologici Vistamare (azienda dello chef).",
+        price: "€€€€€ (à la carte da 40€, degustazione ~190€)",
+        when: "Occasioni speciali, cene di rappresentanza, per vivere il mito",
+        tags: ["1 Stella Michelin", "Carlo Cracco", "Galleria", "5 piani", "Café al pian terreno"]
       }
     ]
   },
@@ -656,6 +694,7 @@ const data = [
         name: "Confine",
         subtitle: "Pizza e Cantina",
         zone: "Cinque Vie",
+        notVisited: true,
         shortDesc: "Pizzeria d'autore di Francesco Capece, #2 in Italia e #4 al mondo nella 50 Top Pizza. Esperienza a tappe, non 'una pizza al volo'.",
         tagline: "Da Confine non si prenota una pizza, si entra in un rituale",
         cuisine: "Pizza gourmet napoletana contemporanea — tasting menu di pizza",
@@ -699,6 +738,109 @@ const data = [
         price: "€€ (~15-20€ a spritz)",
         when: "Aperitivo con effetto wow, post-shopping in Galleria, fine serata in zona Duomo (sabato fino all'1, altrimenti chiude alle 23)",
         tags: ["Vista Duomo", "Aperitivo iconico", "Sempre affollata", "Prenotazione consigliata", "Prezzi turistici"]
+      },
+      {
+        name: "Rita & Cocktails",
+        subtitle: "American bar storico",
+        zone: "Navigli",
+        notVisited: true,
+        shortDesc: "Aperto nel 2002 da Edoardo Nono in una traversa del Naviglio Grande. Punto di riferimento storico per la mixology milanese. Nel World's 50 Best Discovery.",
+        tagline: "Dove la mixology milanese ha imparato a fare sul serio",
+        cuisine: "American bar, cocktail di stagione con ingredienti freschi e fatti in casa",
+        address: "Via Angelo Fumagalli 1 (traversa del Naviglio Grande, dopo il ponte di ferro)",
+        atmosphere: "Veterano della scena cocktail di Milano, modellato su un classico american bar. Pioniere nell'uso di ingredienti freschi quando ancora non era la norma. Locale luminoso con bancone centrale e veranda. Vibe: ospitalità, eleganza, niente turisti — solo chi sa. Nel 2019 ha aperto anche Rita's Tiki Room a due passi con la socia Chiara Buzzi.",
+        specialties: "Carta divisa in tre categorie: Restoring, Refreshing, Relaxing. Più una sezione barrel-aged. Drink signature come il Willy Wonka (marmellata di frutta home-made, ginger, miele, lime, bergamotto, scaglie di cioccolato). Cucina firmata dallo chef Luca Chiaruttini: alette di pollo alla Coca-Cola, burger, crocchette di zucchine.",
+        price: "€€€ (~13€ a cocktail)",
+        when: "Aperitivo lungo, serata al bancone con i bartender, post-cena rilassato. Lun-Sab",
+        tags: ["Dal 2002", "World's 50 Best", "Ingredienti freschi", "Cucina al bar", "Edoardo Nono"]
+      }
+    ]
+  },
+  {
+    category: "Colazione",
+    number: "IX",
+    restaurants: [
+      {
+        name: "Loste Café",
+        subtitle: "Specialty Coffee & Bakery",
+        zone: "Risorgimento / Certosa",
+        shortDesc: "Caffetteria scandinava aperta in pandemia da Lorenzo Cioli e Stefano Ferraro (ex pastry chef del Noma di Copenhagen). Tre Chicchi e Tre Tazzine del Gambero Rosso.",
+        tagline: "Il cinnamon roll che ha cambiato la colazione milanese",
+        cuisine: "Lievitati nord-europei, specialty coffee, pranzo leggero",
+        address: "Via Francesco Guicciardini 3 (sede storica) + Via Varesina 204 (Certosa District)",
+        atmosphere: "Design essenziale di stile scandinavo, cosmopolita. Il nome 'Loste' viene dalla fusione delle iniziali dei fondatori (Lorenzo + Stefano). Stefano arriva dal Noma di Copenhagen (3 stelle Michelin), Lorenzo è sommelier formato da Tim Wendelboe al 108 di Copenhagen. Aspettarsi sempre coda fin dall'apertura.",
+        specialties: "Cinnamon roll iconico, croissant al cardamomo con glassa al caffè e arancio, pain au chocolat, 'Il Kev' (frolla con crema pasticcera e marmellata), 'Cotto e Ricotto' (croissant cotto due volte con crema di mandorle). Caffè specialty (espresso, cappuccino, flat white, filtri).",
+        price: "€€ (~3€ a pasta, ~9€ per due paste e cappuccino)",
+        when: "Colazione e pranzo veloce. Da prenotare mentalmente almeno 15-30 min di coda nel weekend",
+        tags: ["Ex Noma", "Specialty coffee", "Cinnamon roll", "Lievitati nordici", "Sempre coda"]
+      },
+      {
+        name: "Signor Lievito",
+        subtitle: "Bakery baltica",
+        zone: "XXII Marzo / Porta Romana",
+        shortDesc: "Bakery aperta nel 2022 da Natalija Nikitina, ex modella lettone diventata panificatrice autodidatta in lockdown. Lievito madre di 120 anni da un forno di San Giorgio a Cremano (NA).",
+        tagline: "Pane e dolci baltici a Milano, con un lievito che ha più storia di noi",
+        cuisine: "Bakery nord-europea, lievitati baltici, focacce, pane di segale",
+        address: "Via Maestri Campionesi 26, Milano",
+        atmosphere: "Piccolo laboratorio di 60 mq con saletta da cinque tavoli. Design firmato Hannes Peer (architetto altoatesino del mondo moda): legno di betulla, piastrelle in terracotta, stile nordico accogliente. La storia è milanese-lettone: Natalija ha lasciato la moda per il pane.",
+        specialties: "Bulka lettone ai semi di papavero, cinnamon roll, kardemummabulle svedesi, pane 100% segale dal retrogusto cacao, pagnotte integrali con noci/avena/cereali, focacce farcite.",
+        price: "€€ (lievitati 2,50-5€, pane 8-12€/kg, focacce 10-18€/kg)",
+        when: "Colazione lenta. Sab-Dom code anche di un'ora. Mar-Ven 8-19, Sab-Dom 8-13:30, chiuso lunedì",
+        tags: ["Baltico", "Dal 2022", "Code lunghe", "Lievito 120 anni", "Cinnamon roll cult"]
+      },
+      {
+        name: "Portrait Milano — 10_11",
+        subtitle: "Lungarno Collection",
+        zone: "Quadrilatero della Moda",
+        shortDesc: "La colazione dell'hotel 5* della famiglia Ferragamo nell'ex Seminario Arcivescovile del 1652. Premiata 'Miglior colazione in Hotel' ai Food&Wine Italia Awards 2025.",
+        tagline: "La colazione che è quasi un pranzo, nel chiostro più bello di Milano",
+        cuisine: "Colazione gourmet, brunch domenicale, mixology",
+        address: "Corso Venezia 11 — ingresso dal cortile rinascimentale (ex Seminario Arcivescovile)",
+        atmosphere: "Cortile rinascimentale colonnato, sospeso fuori dal ritmo della città. Hotel aperto a dicembre 2022 (gruppo Ferragamo/Lungarno Collection), fresco di due chiavi Michelin 2025. Pastry chef: Cesare Murzilli (ex Joia, Metamorfosi). F&B Diego Cognetti.",
+        specialties: "Tre formule: Continentale, Buffet (45€), Portrait (55€: buffet + piatto caldo). Torta frangipane al pistacchio con caramello all'arancia e amarene, veneziana ripiena, uovo alla milanese con spuma al taleggio, uovo Capitelli con prosciutto cotto affumicato, avocado toast, pancake, waffle, centrifugati. Brunch domenicale con Bloody Mary al carrello.",
+        price: "€€€€ (45-55€ a colazione)",
+        when: "Colazione lenta della domenica, colpire qualcuno, brunch (dom 12-16). Aperta a tutti, non solo agli ospiti. Sempre sold out, prenotare",
+        tags: ["Miglior colazione 2025", "5 stelle", "Aperto al pubblico", "Brunch domenicale", "Ex Seminario 1652"]
+      }
+    ]
+  },
+  {
+    category: "Gelateria",
+    number: "X",
+    restaurants: [
+      {
+        name: "Ciacco",
+        subtitle: "Gelato Senz'Altro",
+        zone: "Spadari / Duomo",
+        shortDesc: "Gelateria gastronomica di Stefano Guizzetti, scienziato dell'alimentazione laureato a Parma. Apre a Milano nel 2014, a due passi dal Duomo. Solo ingredienti naturali.",
+        tagline: "Il gelato 'senz'altro' — senza emulsionanti, coloranti, conservanti, aromi",
+        cuisine: "Gelato artigianale gastronomico, sorbetti, accostamenti audaci",
+        address: "Via Spadari 13, a due passi dal Duomo. Nuovo Laboratorio Urbano (270mq) aperto al pubblico nel 2024",
+        atmosphere: "Boutique gelateria minimal-chic nei toni beige, rosa e bianco, tavolini simil-marmo e lampade moderne. Pochi posti a sedere. Stefano Guizzetti — laurea in Scienze Alimentari a Parma — è il primo a portare un approccio scientifico al gelato senza additivi. Solo latte/acqua, zucchero, proteine e fibre vegetali.",
+        specialties: "Pistacchio di Bronte (il più venduto), Ricordo di un tortello, Quasi Cheesecake, Gelato Barricato (in infusione con doghe di rovere fiammate), gusti audaci come Amaro con pompelmo rosa rabarbaro pepe di Timut, Caffè in Bianco, Ricordo Catalano alla cannella con arance amare. Gusti in rotazione continua.",
+        price: "€ (coppetta o cono da 3€)",
+        when: "Quando vuoi un gelato che ti faccia ragionare, non solo rinfrescare",
+        tags: ["No additivi", "Ingredienti biologici", "Gusti gastronomici", "Vegan options", "Dal 2014 a Milano"]
+      }
+    ]
+  },
+  {
+    category: "Enoteca",
+    number: "XI",
+    restaurants: [
+      {
+        name: "NON la solita Vineria",
+        subtitle: "Vini & Storytelling",
+        zone: "Porta Romana",
+        shortDesc: "Aperta nel 2023 da Andrea Vignali, Daniele Rosa (già Mirò - Osteria del Cinema all'Anteo) e la sommelier toscana Valentina Bruno. 700 vini in carta, 40% francesi.",
+        tagline: "L'enoteca dove il vino si beve, ma soprattutto si racconta",
+        cuisine: "Mescita di qualità, piccola gastronomia, taglieri, piatti caldi",
+        address: "Via Orti 4, Milano (Porta Romana, accanto a Lacerba)",
+        atmosphere: "Stile vecchia Milano (archi, mattoni a vista, soffitto in legno) che dialoga con un design moderno e urbano: grande specchio, bottigliera che abbraccia le pareti, bancone retrò centrale. Piccolo dehor coperto sempre aperto. Sommelier Valentina porta selezioni da piccoli e piccolissimi produttori, molte etichette dalla Borgogna grazie a Giancarlo Marino.",
+        specialties: "700 vini in carta (di cui ~40% francesi, rarità per Milano). Proposta gastronomica che varia spesso. Approccio: raccontare il prodotto, l'artigiano, la passione. Per neofiti e appassionati.",
+        price: "€€€",
+        when: "Aperitivo lungo da intenditori, cena vinosa, scoperta di etichette poco viste in Italia",
+        tags: ["700 etichette", "40% francesi", "Borgogna", "Dal 2023", "Storytelling"]
       }
     ]
   }
@@ -725,7 +867,7 @@ data.forEach((cat, ci) => {
     card.className = 'card';
     card.onclick = () => openModal(ci, ri);
     card.innerHTML = `
-      <div class="card-name">${r.name}</div>
+      <div class="card-name">${r.name}${r.notVisited ? '<span class="to-try-star">✦</span>' : ''}</div>
       <div class="card-zone">${r.zone}</div>
       <div class="card-desc">${r.shortDesc}</div>
       <div class="card-arrow">Scopri</div>
@@ -738,7 +880,7 @@ function openModal(ci, ri) {
   const r = data[ci].restaurants[ri];
   const cat = data[ci].category;
   document.getElementById('modal-body').innerHTML = `
-    <div class="modal-cat">${cat} · ${r.subtitle}</div>
+    <div class="modal-cat">${cat} · ${r.subtitle}${r.notVisited ? '<span class="to-try-pill">Da provare</span>' : ''}</div>
     <div class="modal-name">${r.name}</div>
     <div class="modal-tagline">"${r.tagline}"</div>
 
