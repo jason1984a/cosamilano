@@ -524,6 +524,7 @@ const data = [
         name: "Yapa",
         subtitle: "Nomadic Soul",
         zone: "Porta Romana / V Giornate",
+        notVisited: true,
         shortDesc: "Cucina nomade dello chef toscano Matteo Pancetti, formatosi nove anni con Sergi Arola tra Barcellona, Brasile, Hong Kong, Dubai, Cile. In viale Montenero dal 2021.",
         tagline: "Un viaggio culinario che ti trasporta in un altro mondo",
         cuisine: "Fusion nomade — Mediterraneo, Asia, Sud America. Cocktail bar integrato",
@@ -582,6 +583,21 @@ const data = [
         price: "€€€€ (antipasti da 17€, primi da 24€, secondi da 27€)",
         when: "Cena elegante, appuntamenti business chic, weekend brunch",
         tags: ["Dolce Vita", "Dress code", "Cucina a vista", "No foto", "La Gioia Group"]
+      },
+      {
+        name: "Sapemare",
+        subtitle: "Tapas Di Mare",
+        zone: "Isola",
+        notVisited: true,
+        shortDesc: "Tapas di mare in un locale intimo dietro al Bosco Verticale. Concept originale: piattini di pesce del sud rivisitati, cocktail signature ispirati al mare. Nell'Isola.",
+        tagline: "Il primo aperitivo di mare di Milano — sapore del sud in versione tapas",
+        cuisine: "Tapas di mare mediterranee (crudi, cotti, fritti), cocktail bar, cucina meridionale",
+        address: "Via Pastrengo 2, Milano (Isola, dietro al Bosco Verticale)",
+        atmosphere: "Locale piccolo, curato e intimo — non da grandi numeri ma da sedersi tra amici o coppia. Design accogliente con luci soffuse. Personale attento e cordiale (spesso citato in recensioni: Giuliano). Travellers' Choice Tripadvisor. Concept dichiarato: 'aperitivo di mare' rivisitato in chiave gastronomica.",
+        specialties: "Tapas di mare (calde, fredde, fritti, crudi): parmigiana di mare, triglia in carrozza, ravioli di pesce, sashimi, polpo, calamari, gamberi. Opzioni vegetariane. Cocktail signature 'di mare' abbinati alle tapas. Cantina con italiani prestigiosi (rossi, bianchi, bollicine).",
+        price: "€€€ (~25-40€ a persona, cocktail e vini a parte)",
+        when: "Aperitivo lungo che diventa cena, serata tra amici, appuntamento diverso. Solo cena",
+        tags: ["Tapas di mare", "Vicino Bosco Verticale", "Cocktail signature", "Travellers' Choice", "Concept originale"]
       }
     ]
   },
@@ -713,7 +729,6 @@ const data = [
         name: "Confine",
         subtitle: "Pizza e Cantina",
         zone: "Cinque Vie",
-        notVisited: true,
         shortDesc: "Pizzeria d'autore di Francesco Capece, #2 in Italia e #4 al mondo nella 50 Top Pizza. Esperienza a tappe, non 'una pizza al volo'.",
         tagline: "Da Confine non si prenota una pizza, si entra in un rituale",
         cuisine: "Pizza gourmet napoletana contemporanea — tasting menu di pizza",
@@ -723,6 +738,20 @@ const data = [
         price: "€€€ (~20-40€ a persona)",
         when: "Per chi vuole capire dove può arrivare la pizza, cene curiose. Solo cena (tranne weekend a pranzo)",
         tags: ["#2 in Italia", "Tasting menu", "Prenotazione obbligatoria", "Solo cena", "Chiuso lunedì"]
+      },
+      {
+        name: "Futura Pizzeria Romana",
+        subtitle: "Luca Pezzetta",
+        zone: "Isola",
+        shortDesc: "Aperto l'8 novembre 2025 dal pizzaiolo di Fiumicino Luca Pezzetta (già Clementina, Micro Forno, Ippolito Osteria) col Gioia Group della famiglia Ferrieri (Cioccolatitaliani).",
+        tagline: "La pizza romana come non l'hai mai mangiata al nord",
+        cuisine: "Pizza tonda romana stesa a mattarello, sottile, croccante e con il bordo bruciato",
+        address: "Via Pietro Borsieri 28, Milano (Isola, alle spalle di Porta Garibaldi, dove c'era La Balena)",
+        atmosphere: "Pizzeria di quartiere di successo esplosivo — file già dalle prime settimane. Format pensato bene, servizio amichevole e competente. Ai piedi di un palazzo d'epoca tra via Borsieri e via Perasto, in un quartiere ormai saturo di pizzerie ambiziose (Sublime, Biga, Berberè, Renato Bosco).",
+        specialties: "Pizza tonda romana da 160g, 32cm di diametro, sottile e croccante. Signature: Futura Marinara, Capricciosa di Mare, Pomodoro-Burro-Parmigiano, Croissant con cocktail di gamberi. Fritti d'autore: supplì al telefono, all'ossobuco, alla scarola, crocchetta provola-mortadella-arancia. Bruschetta, sfogliati, dolci di Pezzetta.",
+        price: "€€ (~25-35€ a persona)",
+        when: "Serate con la Roma nel cuore, cene di quartiere in Isola. Prenotare quasi obbligatorio",
+        tags: ["Dal 2025", "Romana a mattarello", "Luca Pezzetta", "Futura Marinara", "Sold out"]
       }
     ]
   },
@@ -734,7 +763,6 @@ const data = [
         name: "The Doping Club",
         subtitle: "@ Aethos Milan",
         zone: "Porta Ticinese / Navigli",
-        notVisited: true,
         shortDesc: "Cocktail bar dalle atmosfere da gentlemen's club inglese, dentro il boutique hotel Aethos. Tra i top di Milano per la mixology.",
         tagline: "Il lato oscuro dello sport: il doping (legale) del buon bere",
         cuisine: "Mixology d'autore, signature cocktails, food pairing mediterraneo",
@@ -773,6 +801,20 @@ const data = [
         price: "€€€ (~13€ a cocktail)",
         when: "Aperitivo lungo, serata al bancone con i bartender, post-cena rilassato. Lun-Sab",
         tags: ["Dal 2002", "World's 50 Best", "Ingredienti freschi", "Cucina al bar", "Edoardo Nono"]
+      },
+      {
+        name: "Mag Café",
+        subtitle: "Speakeasy sui Navigli",
+        zone: "Navigli",
+        shortDesc: "Cocktail bar aperto nel 2013 da Flavio Angiolillo e Marco Russo (stesso gruppo di Backdoor43, 1930 Speakeasy e Iter). Ispirato agli speakeasy americani anni '30.",
+        tagline: "Un salotto anni '30 sul Naviglio, dove si sta ore senza accorgersene",
+        cuisine: "Mixology creativa, cocktail signature, aperitivo con taglieri",
+        address: "Ripa di Porta Ticinese 43, sul Naviglio Grande",
+        atmosphere: "Ingresso stretto che introduce a un locale intimo e caldo, come un salotto vissuto. Bancone in rovere in stile apothecary, lampadario ricavato da una ruota di bicicletta con lampadine a filamento. Alle pareti opere in tecnica mista di Simona Cozzupoli, dettagli à la Alice nel Paese delle Meraviglie. Fuori tavolini su botti di vino dipinte con il logo Mag. Aperto fino alle 2:00.",
+        specialties: "Drink list che cambia stagionalmente, spesso concettuale (una edizione era ispirata alle fermate della metro di Milano). Signature: Asia Mule, Negroni del Marinaio, Melaba (miele, cardamomo, assenzio, lime, vodka), Martini for Bond Girls. Anche opzioni analcoliche (Rabbit Mule, Squirrel Sour). Con il drink arrivano taglieri di salumi, formaggi e crackers.",
+        price: "€€ (~10-13€ a cocktail)",
+        when: "Aperitivo, post-cena, serata lunga sui Navigli. Prenotazione consigliata nel weekend",
+        tags: ["Dal 2013", "Anni '30", "Signature cocktail", "Aperto fino alle 2", "Angiolillo & Russo"]
       }
     ]
   },
